@@ -1,0 +1,48 @@
+
+
+//Tell Git who you are
+C:\Users\Rahul>git config --global user.name "rahul"
+C:\Users\Rahul>git config --global user.email rahuljain5355@gmail.com
+
+//Create a new local repository
+C:\Users\Rahul\Desktop\Java\Git>git init
+
+//First need to move the code from local repo to stash(commit level no 1)
+C:\Users\Rahul\Desktop\Java\Git> git add *
+
+		// To Check the status
+		C:\Users\Rahul\Desktop\Java\Git>git status
+
+//Now to commit the code // -m is to enter commit message
+C:\Users\Rahul\Desktop\Java\Git>git commit -m "first commit"
+
+//Connect to a remote repository
+C:\Users\Rahul\Desktop\Java\Git>git remote add origin https://github.com/rahul6908/Practice1.git
+
+//Finally push to main branch
+C:\Users\Rahul\Desktop\Java\Git>git push origin master
+
+
+
+
+ 		 Now to extract git project
+// To extract the project at specific location // This is first time taking of code
+C:\Users\Rahul\Desktop\Java\Git>git clone https://github.com/rahul6908/Practice1.git
+
+
+// To get an updated code from git hub
+C:\Users\Rahul\Desktop\Projects\selenium>git pull origin master
+
+
+
+
+		To add proxy
+// to check proxy
+git config --global http.proxy
+
+// to add proxy 
+git config --global http.proxy	proxyaddress:port
+
+		To change Branch
+// To change branch
+git branch -M branchName
